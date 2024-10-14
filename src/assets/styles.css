@@ -1,0 +1,98 @@
+/* 重置样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #00ff72, #72ff00, #ff0072); /* 丰富的混色渐变 */
+  background-size: 200% 200%; /* 让渐变更加平滑 */
+  animation: gradient 15s ease infinite; /* 渐变动画 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 渐变动画 */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 页面内容容器 */
+.container {
+  width: 100%;
+  max-width: 1000px; /* 控制页面最大宽度 */
+  padding: 20px;
+}
+
+/* 方框样式 */
+.section {
+  background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+  border-radius: 20px; /* 圆角边框 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+  transform: scale(1.05); /* 悬停时轻微放大 */
+}
+
+/* 标题样式 */
+h2 {
+  font-size: 2.5rem;
+  color: #333; /* 深色标题 */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* 添加阴影以增强可读性 */
+  margin-bottom: 20px;
+}
+
+/* 段落样式 */
+p {
+  font-size: 1.2rem;
+  color: #555; /* 使用较浅的灰色 */
+}
+
+/* 按钮样式 */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1e90ff; /* 按钮颜色 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+  opacity: 0.9;
+}
+
+button:hover {
+  background-color: #4169e1; /* 鼠标悬停时颜色 */
+  opacity: 1;
+}
+
+/* 底部边框 */
+.section:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: rgba(30, 144, 255, 0.6); /* 半透明的底部边框 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
