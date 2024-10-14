@@ -3,7 +3,7 @@
     <h2>立即下载</h2>
     <p>支持 Windows 版本，立即下载并开始使用。</p>
     <a 
-      href="/download/四则运算计算器.exe" 
+      href="/vue-calculator/download/四则运算计算器.exe" 
       class="download-button" 
       download
     >
